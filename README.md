@@ -1,6 +1,6 @@
-# Farmer Income Prediction using Linear Regression
+# Farmer Income Prediction using Random Forest Regresiion
 
-This project aims to predict the **annual income of farmers** using demographic, socio-economic, and environmental features. The model is built using **Linear Regression**, with appropriate data cleaning, feature engineering, and evaluation steps.
+This project aims to predict the **annual income of farmers** using demographic, socio-economic, and environmental features. The model is built using **Random Forest Regression**, with appropriate data cleaning, feature engineering, and evaluation steps.
 
 ---
 
@@ -21,7 +21,6 @@ This project aims to predict the **annual income of farmers** using demographic,
 - Visualized outliers and distributions
 
 ### 2. Data Preprocessing
-- **Separated min/max range columns** (e.g., `"20 / 40"` → two separate numeric columns)
 - **Encoded categorical variables** (e.g., `SEX`, `REGION`, etc.)
 - **Dropped less useful or problematic categorical columns** with `object` dtype
 
@@ -37,10 +36,10 @@ This project aims to predict the **annual income of farmers** using demographic,
 
 ### 5. Model Evaluation
 - Calculated **MAPE (Mean Absolute Percentage Error)** on training data
-- Achieved a MAPE of **~30.47%** (~69.5% average prediction accuracy)
+- Achieved a MAPE of **~21.06%** (~78.94% average prediction accuracy)
 
 ### 6. Final Prediction
-- Reversed the log transformation (`np.expm1`) to get predicted income
+- Reversed the log transformation to get predicted income
 - Generated final CSV/Excel file with `Farmer_ID` and predicted income
 
 ---
