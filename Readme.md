@@ -1,4 +1,4 @@
-# Farmer Income Prediction using Random Forest Regresiion
+# Farmer Income Prediction using Random Forest Regression
 
 This project aims to predict the **annual income of farmers** using demographic, socio-economic, and environmental features. The model is built using **Random Forest Regression**, with appropriate data cleaning, feature engineering, and evaluation steps.
 
